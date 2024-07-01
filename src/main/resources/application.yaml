@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student
+    username: postgres
+    password: terrrr
+    driverClassName: org.postgresql.Driver
+  main:
+    allow-circular-references: true
+#
+#
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm:
+          jdbc:
+            bind: TRACE
